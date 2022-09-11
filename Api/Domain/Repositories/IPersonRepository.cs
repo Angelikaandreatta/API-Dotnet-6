@@ -6,7 +6,7 @@ namespace Domain.Repositories
     {
         Task<Person> GetById(int id);
         Task<ICollection<Person>> GetPeople();
-        Task<Person> Created(Person person);
+        Task<Person> Create(Person person);
         Task Edit(Person person);
         Task Delete(Person person);
     }

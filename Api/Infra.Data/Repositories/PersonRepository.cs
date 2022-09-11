@@ -14,7 +14,7 @@ namespace Infra.Data.Repositories
             _dbContext = dbContext;
         }
 
-        public async Task<Person> Created(Person person)
+        public async Task<Person> Create(Person person)
         {
             _dbContext.Add(person);
             await _dbContext.SaveChangesAsync();
