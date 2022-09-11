@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities
 {
-    public sealed class Purchase
+    public class Purchase
     {
         public int Id { get; private set; }
         public int ProductId { get; private set; }
