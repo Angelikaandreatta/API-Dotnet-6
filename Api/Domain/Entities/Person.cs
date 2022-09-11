@@ -11,6 +11,7 @@
         public Person(string name, string document, string phone)
         {
             Validation(name, document, phone);
+            Purchase = new List<Purchase>();
         }
 
         public Person(int id, string name, string document, string phone)
@@ -18,6 +19,7 @@
             Domain.Validations.DomainValidationException.When(id <= 0, "Id must be greater than zero");
             Id = id;
             Validation(name, document, phone);
+            Purchase = new List<Purchase>();
         }
 
         private void Validation(string name, string document, string phone)

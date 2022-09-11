@@ -11,6 +11,7 @@
         public Product(string name, string codErp, decimal price)
         {
             Validation(name, codErp, price);
+            Purchase = new List<Purchase>();
         }
 
         public Product(int id, string name, string codErp, decimal price)
@@ -18,6 +19,7 @@
             Domain.Validations.DomainValidationException.When(id <= 0, "Id must be greater than zero");
             Id = id;
             Validation(name, codErp, price);
+            Purchase = new List<Purchase>();
         }
 
         private void Validation(string name, string codErp, decimal price)
