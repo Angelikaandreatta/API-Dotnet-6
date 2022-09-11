@@ -1,2 +1,11 @@
 # API-Dotnet-6
-API em Dotnet 6
+
+
+API de Crud básico de pessoa, produto e compra.
+
+NuGet Packages : FluentValidation
+                 Microsoft.EntityFramework
+                 Microsoft.EntityFramework.Design
+                 Microsoft.EntityFramework.SqlServer
+
+Banco de dados utilizado: Sql Server
