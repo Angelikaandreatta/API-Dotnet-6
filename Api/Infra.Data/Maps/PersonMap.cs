@@ -8,20 +8,20 @@ namespace Infra.Data.Maps
     {
         public void Configure(EntityTypeBuilder<Person> builder)
         {
-            builder.ToTable("Person");
+            builder.ToTable("person");
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id)
-                .HasColumnName("Id_Person")
+                .HasColumnName("idperson")
                 .UseIdentityColumn();
 
             builder.Property(x => x.Name)
-                .HasColumnName("Name_Person");
+                .HasColumnName("nameperson");
 
             builder.Property(x => x.Document)
-                .HasColumnName("Document_Person");
+                .HasColumnName("documentperson");
 
             builder.Property(x => x.Phone)
-                .HasColumnName("Phone_Person");
+                .HasColumnName("phoneperson");
 
             builder.HasMany(x => x.Purchase)
                 .WithOne(x => x.Person)
